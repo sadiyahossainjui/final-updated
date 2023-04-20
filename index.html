@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>APOD Search</title>
+    <!-- Include CSS stylesheets and any other dependencies -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- The Modal -->
+    <div id="view-hd-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" alt="" id="modal-img"></img>
+        </div>
+
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>APOD Search</h1>
+            <form id="dateForm">
+                <label for="dateInput">Enter a date:</label>
+                <input type="date" id="dateInput" required>
+                <button type="submit">Get Picture</button>
+            </form>
+        </header>
+        <main>
+            <section hidden id="apodSection">
+                <figure>
+                    <img id="apodImage" src="" alt="Astronomy Picture of the Day">
+                    <figcaption>Astronomy Picture of the Day</figcaption>
+                </figure>
+                <h2 id="apodTitle"></h2>
+                <p id="apodDate"></p>
+                <p id="apodExplanation"></p>
+                <button type="button" id="addFavorite">Add to Favorites</button>
+            </section>
+            <hr>
+            <section id="favouritesSection">
+                <h2>Favourites</h2>
+                <ul id="favouritesList"></ul>
+            </section>
+        </main>
+    </div>
+
+
+    <div id="demo"></div>
+    <!-- Include JavaScript script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
